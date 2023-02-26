@@ -1,11 +1,14 @@
 @import "_vars";
 
-// basic compornents
+// import lgt-cond
+@import "lgt-cond";
 
+// basic compornents
 body {
   @include font($font-size, $line-height, $font-weight);
   @include font-family($font-family);
   @include color($color);
+  font-feature-settings: palt;
 }
 
 h1 {
