@@ -1,0 +1,130 @@
+@import "_vars";
+
+// basic compornents
+
+body {
+  @include font($font-size, $line-height, $font-weight);
+  @include font-family($font-family);
+  @include color($color);
+}
+
+h1 {
+  @include font-size(2.5rem);
+  @include line-height(1.2);
+  @include font-weight(700);
+  @include color($color);
+}
+
+h2 {
+  @include font-size(2rem);
+  @include line-height(1.2);
+  @include font-weight(700);
+  @include color($color);
+}
+
+h3 {
+  @include font-size(1.5rem);
+  @include line-height(1.2);
+  @include font-weight(700);
+  @include color($color);
+}
+
+h4 {
+  @include font-size(1.25rem);
+  @include line-height(1.2);
+  @include font-weight(700);
+  @include color($color);
+}
+
+h5 {
+  @include font-size(1rem);
+  @include line-height(1.2);
+  @include font-weight(700);
+  @include color($color);
+}
+
+h6 {
+  @include font-size(0.875rem);
+  @include line-height(1.2);
+  @include font-weight(700);
+  @include color($color)
+}
+
+p {
+  @include font-size(1rem);
+  @include line-height(1.5);
+  @include font-weight(400);
+  @include color($color);
+}
+
+a {
+  @include font-size(1rem);
+  @include line-height(1.5);
+  @include font-weight(400);
+  @include color($color-link);
+}
+
+
+// header
+
+.logo {
+  @include font-size(1.5rem);
+  @include line-height(1.2);
+  @include font-weight(700);
+  @include color($color);
+  @include border-radius($border-radius);
+  @include border($border);
+}
+
+.nav {
+  @include font-size(1rem);
+  @include line-height(1.5);
+  @include font-weight(400);
+  @include color($color);
+  @include side-pad(1rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.nav-item {
+  @include font-size(1rem);
+  @include line-height(1.5);
+  @include font-weight(400);
+  @include color($color);
+  a {
+    text-decoration: none;
+  }
+  .orgs {
+    @include font-size(0.875rem);
+  }
+}
+
+// main contents
+
+.main{
+  @include font-size(1rem);
+  @include line-height(1.5);
+  @include font-weight(400);
+  @include color($color);
+  @include side-pad(1rem);
+}
+
+// footer
+.footer {
+  @include font-size(1rem);
+  @include line-height(1.5);
+  @include font-weight(400);
+  @include color($color);
+  @include border-radius($border-radius);
+  @include border($border);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  height: 4rem;
+  background-color: $color-lightest;
+}
